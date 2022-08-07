@@ -253,7 +253,7 @@ p {
 
 /********** Slider **********/
 
-.flechas {
+.flecha {
   visibility: hidden;
 }
 
@@ -293,6 +293,7 @@ p {
   margin: 0 0.5rem;
   border-radius: 100%;
   background-color: var(--gray-color);
+  cursor: pointer;
 }
 
 .slider .punto.activo {
@@ -312,17 +313,13 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
-  .flechas {
-    position: absolute;
-    width: 100%;
-    top: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 996;
+  .right {
+    right: 0;
   }
 
   .flecha {
+    position: absolute;
+    top: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,13 +331,13 @@ p {
     transition: all 0.3s ease;
   }
 
-  .flechas svg {
+  .flecha svg {
     width: 4rem;
     height: 4rem;
     fill: var(--first-color);
   }
 
-  .slider:hover .flechas {
+  .slider:hover .flecha {
     visibility: visible;
   }
 
